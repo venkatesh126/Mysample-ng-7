@@ -1,0 +1,22 @@
+<div class="container">
+  <h2>Collapsible Panel</h2>
+  <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#{{id}}_div"> {{header}}</a>
+        </h4>
+      </div>
+      <div id="{{id}}_div" class="panel-collapse collapse">
+        <div class="panel-body">
+          <ng-content select=".body" ></ng-content>
+          <ng-content select="[venkat]"></ng-content>
+        </div>
+        <div class="panel-footer">
+          <ng-content select=".footer"></ng-content>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <ng-template #contentTpl><ng-content></ng-content></ng-template> -->
