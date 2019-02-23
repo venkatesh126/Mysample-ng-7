@@ -1,0 +1,85 @@
+<!-- Flex css layout -->
+<!-- example 1 -->
+<div appMyDirective >hi hello </div> 
+<div class="container">
+<div class="container">
+  <div class="firstsection">
+    <form class="form" [formGroup]="form" >
+      <div class="form-row">
+          <label for="email" class="control-label" required>Email</label>
+          <input type="text" id="email" class="form-control" formControlName="email">
+      </div>
+      <div class="form-row">
+          <label for="password" class="control-label" required>Password</label>
+          <input type="password" id="password" class="form-control" formControlName="password">
+      </div>
+      <button type="submit" [disabled]="!form.valid"> SUbmit</button>
+    </form>
+  </div>
+</div>
+
+<!-- <column layout -->
+
+<div class="column-layout">
+  <div class="firstcolumn">
+    <h1>First Column</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam voluptatibus soluta, consequuntur, reiciendis debitis
+      omnis fugiat libero pariatur amet laudantium minima consectetur tenetur. Repudiandae, autem, voluptate modi deleniti
+      sequi voluptatum!</p>
+  </div>
+  <div class="secondcolumn">
+    <h1>Second Column</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam voluptatibus soluta, consequuntur, reiciendis debitis
+      omnis fugiat libero pariatur amet laudantium minima consectetur tenetur. Repudiandae, autem, voluptate modi deleniti
+      sequi voluptatum!</p>
+  </div>
+  <div class="thirdcolumn">
+    <h1>Third Column</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam voluptatibus soluta, consequuntur, reiciendis debitis
+      omnis fugiat libero pariatur amet laudantium minima consectetur tenetur. Repudiandae, autem, voluptate modi deleniti
+      sequi voluptatum!</p>
+  </div>
+</div>
+
+<!-- <box layout -->
+
+<div class="box-layout">
+  <div class="box-out">
+    <h1>Box1</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit consectetur
+      nobis molestias! Explicabo deserunt placeat numquam omnis.</p>
+  </div>
+  <div class="box-out">
+    <h1>Box1</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit consectetur
+      nobis molestias! Explicabo deserunt placeat numquam omnis.</p>
+  </div>
+  <div class="box-out">
+    <h1>Box1</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit consectetur
+      nobis molestias! Explicabo deserunt placeat numquam omnis.</p>
+  </div>
+</div>
+<div class="fixed-sizecontainer">
+  <div class="fixed-size">1</div>
+  <div class="fixed-size">2</div>
+  <div class="fixed-size">3</div>
+  <div class="fixed-size">4</div>
+  <div class="fixed-size">5</div>
+  <div class="fixed-size">6</div>
+</div>
+<div class="side-content">
+  <div class="first">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quasi similique amet voluptatem molestiae nostrum ab
+      nesciunt blanditiis repellendus quos, sequi sunt, dolorem quis facilis mollitia nemo modi doloribus quo.</p>
+  </div>
+  <div class="second">
+  <div class="second-a">
+    <p>venkat.</p>
+  </div>
+  <div class="second-b">
+      <p>viju</p>
+    </div>
+  </div>
+</div>
+</div>
